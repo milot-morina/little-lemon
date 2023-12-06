@@ -1,10 +1,14 @@
 
 import './App.css';
+import Header from './components/Header';
+import './components/Nav'
+import Nav from './components/Nav';
 
 function App() {
   return (
     <>
-    <h1>Hello from boilerplate!</h1>
+      <Nav/>
+      <Header/>
     </>
   );
 }
