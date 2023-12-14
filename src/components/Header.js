@@ -1,28 +1,23 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import bannerImg from "../images/restauranfood.jpg";
+import Nav from "./Nav";
+import logo from "../assets/icons/Logo.png";
 
-const Header = () => {
+
+import React from "react";
+
+function Header() {
   return (
-    <header className="header">
-      <section>
-        <div className="banner">
-          <h2>Little Lemon</h2>
-          <h3>Chicago</h3>
-          <p>
-            We are a family owned Mediterraneran restaurant, focused on
-            traditional recipes servred with a modern twist.
-          </p>
-          <Link to="/booking">
-            <button aria-label="On Click">Reserve Table</button>
-          </Link>
+    <>
+      <div className="header">
+        <div className="logo">
+          <img src={logo} alt="Logo" />
         </div>
-        <div className="banner-img">
-          <img src={bannerImg} alt="" />
+
+        <div className="navigation">
+          <Nav />
         </div>
-      </section>
-    </header>
+      </div>
+    </>
   );
-};
+}
 
 export default Header;
